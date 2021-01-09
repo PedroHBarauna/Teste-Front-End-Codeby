@@ -1,0 +1,438 @@
+        /*Início*/
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: auto;
+    overflow-x: hidden;
+}
+        /* Animação*/
+[aos="fade"] {
+    opacity: 0;
+    transition-property: opacity;
+}
+          
+[aos="fade"].aos-animate {
+    opacity: 1;
+}
+
+        /*Scrollbar*/
+    /*Tamanho da Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+    /*Cor do fundo*/
+::-webkit-scrollbar-track {
+    background: #383838;
+ }
+    /*Cor do Scroll*/
+::-webkit-scrollbar-thumb {
+    background:  white; 
+}
+    /*Cor do Scroll Hover*/
+::-webkit-scrollbar-thumb:hover {
+    background: #919191; 
+}
+        /*Banner*/
+    /*Parallax*/
+.hd {
+        background-image: url("../images/banner1.jpg");
+        width: 1310px;
+        height: 600px;
+        z-index: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+    /*Elementos*/
+.container-b{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+    /*Logo*/
+.container-b .logo{
+        width: 130px;
+        height: auto;
+        position: relative;
+        margin-left: 580px;
+        margin-top: 80px ; 
+}
+    /*Fontes*/
+@font-face {
+    font-family: 'Poppins-Thin';
+    src: url(../fonts/Poppins-Thin.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+    /*Título*/
+h1{
+    width: 800px;
+    height: auto;
+    text-indent: 60px;
+    font-size: 4.2em;
+    font-family: 'Poppins-Thin';
+    color: white;
+    position: relative;
+    margin-left: 310px;
+    margin-top: 40px;
+}
+    /*Botão*/
+.container-b .btn-1{
+    width: 160px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins-SemiBold';
+    color: #383838;
+    padding: 12px 25px 12px 25px;
+    background-color: white;
+    position: relative;
+    margin-left: 540px;
+}
+.container-b .btn-1:hover{
+    background-color: #383838b4;
+    color: white;
+}
+        /*Seção 1*/
+.sct-1{
+    width: 1200px;
+    height: auto;
+    position: relative;
+    margin-left: 45px;
+    
+}
+    /*Título e Descrição*/
+.sct-1 .text-section{
+    color:#383838;
+    font-family: "Poppins-SemiBold";
+}
+.sct-1 .text-section .general-title1{
+    font-size: 2.7em;
+    margin-left: 18px;
+}
+.sct-1 .text-section .description{
+    font-size: 1.2em;
+    margin-top: -30px;
+    margin-left: 18px;
+}
+    
+    
+    /*Bloco das Imagens*/
+.sct-1 .img-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+    /*Imagens*/
+.sct-1 .img-section .category{
+    width: auto;
+    height:345px;
+    padding: 8px 15px 8px 15px;
+}
+    /*Título das imagens 1, 2 e 5*/
+.sct-1 .img-section .txt-category1 h2{
+    font-size: 2.5em;
+    position: absolute;
+    color:#ffffff;
+    font-family: "Poppins-SemiBold";
+    padding-left: 50px;   
+}
+    /*Título das imagens 3*/
+.sct-1 .img-section .txt-category2 h2{
+    font-size: 2.5em;
+    position: absolute;
+    color:#ffffff;
+    font-family: "Poppins-SemiBold";
+    padding-left: 50px;
+    padding-top: 100px;   
+}
+   /*Título das imagens 4*/
+.sct-1 .img-section .txt-category3 h2{
+    font-size: 2.5em;
+    position: absolute;
+    color:#ffffff;
+    font-family: "Poppins-SemiBold";
+    padding-left: 590px;  
+
+}
+    /*Descrição das imagens 1, 2 e 5*/ 
+.sct-1 .img-section .txt-category1 p{
+    font-size: 1.1em;
+    position: absolute;
+    color:#ffffff;
+    font-family: "Poppins-SemiBold";
+    padding-left: 50px;
+    padding-top: 70px; ;
+    
+}
+    /*Descrição das imagens 3*/
+.sct-1 .img-section .txt-category2 p{
+    font-size: 1.1em;
+    position: absolute;
+    color:#ffffff;
+    font-family: "Poppins-SemiBold";
+    padding-left: 50px;
+    padding-top: 190px; 
+    
+}
+    /*Descrição das imagens 4*/
+.sct-1 .img-section .txt-category3 p{
+    font-size: 1.1em;
+    position: absolute;
+    color:#ffffff;
+    font-family: "Poppins-SemiBold";
+    padding-left: 350px;
+    padding-top: 80px; ;
+    
+}
+        /*Seção 2*/
+.sct-2{
+    background-color: #f4f4f4;
+}
+
+.sct-2 .text-section{
+    color:#383838;
+    font-family: "Poppins-SemiBold";
+}
+    /*Título e Descrição*/
+.sct-2 .text-section .general-title1{
+    font-size: 2.7em;
+    margin-left: 60px;
+    margin-top: 100px;
+}
+.sct-2 .text-section .description{
+    font-size: 1.2em;
+    margin-top: -30px;
+    margin-left: 60px;
+}
+.sct-2 .entire-graphic{
+    display: flex;
+    width:1200px;
+    height: 350px;
+    margin-left:30px;
+    margin-top: 250px ;
+}
+.cost-1 {
+    background-color: #005499;
+    color: white;
+    padding: 1px 8px 1px 8px;
+    font-size: 1.3em;
+    font-family: "Poppins-SemiBold";
+    margin-left: 30px;
+}
+.cost-2 {
+    
+    background-color: #005499;
+    color: white;
+    padding: 1px 5px 1px 5px;
+    font-size: 1.3em;
+    font-family: "Poppins-SemiBold";
+    margin-left: 30px;
+    margin-top: -40px ;
+}
+.cost-3 {
+    
+    background-color: #005499;
+    color: white;
+    padding: 1px 8px 1px 8px;
+    font-size: 1.3em;
+    font-family: "Poppins-SemiBold";
+    margin-left: 30px;
+    margin-top: -80px ;
+}
+.cost-4 {
+    
+    background-color: #005499;
+    color: white;
+    padding: 1px 8px 1px 8px;
+    font-size: 1.3em;
+    font-family: "Poppins-SemiBold";
+    margin-left: 30px;
+    margin-top: -120px ;
+}
+.cost-5 {
+    
+    background-color: #005499;
+    color: white;
+    padding: 1px 8px 1px 8px;
+    font-size: 1.3em;
+    font-family: "Poppins-SemiBold";
+    margin-left: 30px;
+    margin-top: -160px ;
+}
+.cost-6 {
+    
+    background-color: #005499;
+    color: white;
+    padding: 1px 8px 1px 8px;
+    font-size: 1.3em;
+    font-family: "Poppins-SemiBold";
+    margin-left: 30px;
+    margin-top: -200px ;
+}
+.cost-1 h2, p{
+    margin-left: 15px;
+}
+.cost-2 h2, p{
+    margin-left: 15px;
+}
+.cost-3 h2, p{
+    margin-left: 15px;
+}
+.cost-4 h2, p{
+    margin-left: 15px;
+}
+.cost-5 h2, p{
+    margin-left: 15px;
+}
+.cost-6 h2, p{
+    margin-left: 15px;
+}
+
+.graphic-1{
+    
+    background-color: #0088ed;
+    margin-left: 30px;
+    color: white;
+    font-family: "Poppins-Regular";
+    font-size: 0.9em;
+    padding: 10px 1px 1px 1px;
+}
+.graphic-2{
+
+    background-color: #0088ed;
+    margin-left: 30px;
+    color: white;
+    font-family: "Poppins-Regular";
+    font-size: 0.9em;
+    padding: 70px 1px 1px 1px;
+    
+}
+.graphic-3{
+    background-color: #0088ed;
+    margin-left: 30px;
+    color: white;
+    font-family: "Poppins-Regular";
+    font-size: 0.9em;
+    padding: 91px 1px 1px 1px;
+}
+.graphic-4{
+    background-color: #0088ed;
+    margin-left: 30px;
+    color: white;
+    font-family: "Poppins-Regular";
+    font-size: 0.9em;
+    padding: 131px 1px 1px 1px;
+}
+.graphic-5{
+    background-color: #0088ed;
+    margin-left: 30px;
+    color: white;
+    font-family: "Poppins-Regular";
+    font-size: 0.9em;
+    padding: 171px 1px 1px 1px;
+}
+.graphic-6{
+    background-color: #0088ed;
+    margin-left: 30px;
+    color: white;
+    font-family: "Poppins-Regular";
+    font-size: 0.9em;
+    padding: 211px 1px 1px 1px;
+}
+.graphic-1 p{
+    margin-left: 5px;
+    
+}
+.graphic-2 p{
+    margin-left: 5px;
+    margin-top: -5px
+}
+.graphic-3 p{
+    margin-left: 5px;
+}
+.graphic-4 p{
+    margin-left: 5px;
+}
+.graphic-5 p{
+    margin-left: 5px;
+}
+.graphic-6 p{
+    margin-left: 5px;
+}
+        /*Responsividade*/
+@media screen and (min-width: 1440px){
+    .hd {
+        width: 1440px;
+        height: 600px;
+    }
+            /*Logo*/
+    .container-b .logo{
+        width: 130px;
+        height: auto;
+        position: relative;
+        margin-left: 640px;
+        margin-top: 80px ; 
+    }
+    /*Fontes*/
+    @font-face {
+        font-family: 'Poppins-Thin';
+        src: url(../fonts/Poppins-Thin.ttf);
+    }
+    @font-face {
+        font-family: 'Poppins-Regular';
+        src: url(../fonts/Poppins-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'Poppins-SemiBold';
+        src: url(../fonts/Poppins-SemiBold.ttf);
+    }
+    /*Título*/
+    h1{
+        width: 800px;
+        height: auto;
+        text-indent: 60px;
+        font-size: 4.2em;
+        font-family: 'Poppins-Thin';
+        color: white;
+        position: relative;
+        margin-left: 380px;
+        margin-top: 40px;
+    }
+    /*Botão*/
+    .container-b .btn-1{
+        width: 160px;
+        height: auto;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Poppins-SemiBold';
+        color: #383838;
+        padding: 12px 25px 12px 25px;
+        background-color: white;
+        position: relative;
+        margin-left: 610px;
+    }
+    .container-b .btn-1:hover{
+        background-color: #383838b4;
+        color: white;
+    }
+    /*Seção 1*/
+    .sct-1{
+        width: 1200px;
+        height: auto;
+        position: relative;
+        margin-left: 125px;
+        
+    }
+}
